@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    font-family:"Poppins", sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(12, 12, 12);
+}
+
+nav > .logo {
+    padding-left: 2vw;
+}
+
+nav > .logo > h1 {
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: rgb(255, 30, 30);
+}
+
+nav > label {
+    display: none;
+}
+
+nav > label > i {
+    color: white;
+    font-size: 2vw;
+}
+
+nav > #nav_link{
+    display: none;
+}
+
+nav > ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav > ul > li {
+    width: auto;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-right: 2vw;
+}
+
+nav > ul > li > a {
+    transition: all 0.5s ease-in-out;
+    padding: 0.5vh 0.5vw;
+    font-size: 1vw;
+    
+} 
+
+nav > ul > li > a::after {
+    content: '';
+    width: 100%;
+    height: 0.5vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-110%);
+    background-color: red;
+    color: red;
+    box-shadow: 0 0 0.5vw 0.2vw red;
+    transition: all 0.5s ease-in-out;
+}
+
+nav > ul > li > a:hover {
+    color: red;
+}
+
+nav > ul > li > a:hover::after {
+    transform: translateX(0);
+}
+
+nav > ul > li > a.active {
+    color: red;
+}
+
+nav > ul > li > a.active::after {
+    transform: translateX(0);
+}
+
+main {
+    width: 100vw;
+}
+
+main > div {
+    padding-top:7vh ;
+    width: 100vw;
+    height: 93vh;
+    overflow: hidden;
+}
+
+#home {
+    display: grid;
+    grid-template-areas: "image" "text";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#home > .image {
+    grid-area: image;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#home > .image > img {
+    width: 40vw;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    filter: drop-shadow(7vw 3vh 1vw red);
+}
+
+#home > .image > span {
+    display: inline-block;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    z-index: -2;
+    position: absolute;
+    top: 3vh;
+    left: 1vw;
+    background-color: red;
+    box-shadow: 0 0 1vw 0.2vw red;
+}
+
+#home > .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home > .text > h1 {
+    font-size: 3vw;
+}
+
+#home > .text > h1 > span {
+    color: red;
+    font-size: 2.5vw;
+}
+
+#home > .text > h2 {
+    font-family: "Audiowide", sans-serif;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+#home > .text > .medsos {
+    width: 7vw;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#home > .text > .medsos > a {
+    color: red;
+}
+
+#home > .text > .medsos > a > i {
+    font-size: 2vw;
+}
+
+#home > .text> .link {
+    margin-top: 3vh;
+}
+
+#home > .text> .link > a {
+    width: 5vw;
+    text-align: center;
+    padding:1vh 2vw;
+    margin-right:2vw;
+    background-color: ;
+    color: red;
+    border: 1px solid red;
+    box-shadow: 0 0 1vw red;
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+#home > .text > .link > a:hover {
+    border-color: white;
+    color: white;
+    box-shadow:0 0 1vw  white;
+}
+
+
+#about_us {
+    padding-top: 8vh;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media only screen and (max-width : 780px) {
+    nav > .logo > h1 {
+        font-size: 2vh;
+    }
+
+    nav > label {
+        display: block;
+    }
+
+    nav > label > i {
+        font-size: 3vh;
+        margin-right: 5vw;
+    }
+
+    nav > ul {
+        width: 40vw;
+        display: block;
+        position: absolute;
+        top: 8vh;
+        right: 1vw;
+        border-radius: 10px;
+        background-color: rgb(12, 12, 12);
+        box-shadow: 0 0 1vh red;
+        visibility: hidden;
+        opacity: 0;
+        transform: translate(100%);
+        transition: all 0.5s ease-in-out;
+    }
+
+    nav > ul > li {
+        z-index: 99;
+    }
+    nav > ul > li > a {
+        font-size: 2vh;
+        text-indent: 2vw;
+        z-index: 999;
+    }
+
+    nav > #nav_link:checked ~ ul {
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0);
+    }
+
+    #home {
+        grid-template-areas: "image" 
+                              "text";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.6fr 1fr;
+    }
+
+    #home > .image {
+        width: 100vw;
+        justify-content: center;
+        z-index: -1;
+    }
+
+    #home > .image > img {
+        width: 30vh;
+        filter: none;
+        border-radius: 50%;
+        background-color: red;
+        box-shadow: 0 0 1vh 1vh red;
+        z-index: -1;
+    }
+    
+    #home > .image > span {
+        display: none;
+    }
+
+    #home > .text {
+        padding-top: 2vh;
+        align-items: center;
+        justify-content: start;
+    }
+    
+    #home > .text > h1 {
+        font-size: 3vh;
+    }
+    
+    #home > .text > h1 > span {
+        color: red;
+        font-size: 2.8vh;
+    }
+    
+    #home > .text > h2 {
+        font-size: 1.3vh;
+    }
+
+    #home > .text > .medsos {
+        width: 35vw;
+        margin-top: 2vh;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #home > .text > .medsos > a > i {
+        font-size: 4vh;
+    }
+    
+    #home > .text> .link > a {
+        padding: 2vw 3vh;
+        margin-right:vw;
+    }
+
+}
