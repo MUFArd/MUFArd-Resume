@@ -434,7 +434,7 @@ main > div {
     }
     
     #about-me > .image-aboutme {
-        width:50vw;
+        width:40vw;
         height: 30vh;
         padding: 1vh;
         
@@ -472,7 +472,7 @@ main > div {
     
     #about-me > .all-aboutme > .aboutme {
         width:80vw;
-        height: 20vh;
+        height: 15vh;
         position: relative;
         top:4vh;
         left: -1vw;
