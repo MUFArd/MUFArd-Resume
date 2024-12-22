@@ -32,6 +32,7 @@ nav {
     width: 100%;
     height: 8vh;
     background-color: rgb(12, 12, 12);
+    z-index: 9999;
 }
 
 nav > .logo {
@@ -178,10 +179,9 @@ main > div {
 }
 
 #home > .text > .medsos {
-    width: 7vw;
     margin-top: 2vh;
     display: flex;
-    justify-content: space-between;
+    gap: 1vw;
 }
 
 #home > .text > .medsos > a {
@@ -216,11 +216,109 @@ main > div {
 }
 
 
-#about_us {
-    padding-top: 8vh;
-    width: 100vw;
-    height: 100vh;
+#about-me { 
+    position: relative;
+    display: flex;
+    gap: 2vw;
 }
+
+#about-me > .image-aboutme {
+    width: 12vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1vw red;
+    background-color: rgb(12, 12, 12);
+    padding: 0 1vw;
+    border-radius: 20px;
+    position: relative;
+    top: 4vh;
+    left: 2vw;
+    z-index: 1;
+    
+}
+
+#about-me > .image-aboutme > img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: red;
+}
+
+#about-me > .image-aboutme > .medsos {
+    width: 100%;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+
+#about-me > .image-aboutme > .medsos > a {
+    color: red;
+}
+
+#about-me > .image-aboutme > .medsos > a > i {
+    font-size: 2vw;
+}
+
+#about-me > .image-aboutme > a {
+    padding: 1vh 1vw;
+    box-shadow: 0 0 1vw red;
+    border-radius: 30px;
+    margin-top: 1vw;
+}
+
+#about-me > .all-aboutme {
+    display: flex;
+    gap: 2vw;
+}
+
+#about-me > .all-aboutme > .aboutme {
+    width:40vw;
+    height: 38vh;
+    position: relative;
+    top:4vh;
+    left: -1vw;
+    box-shadow: 0 0 1vw red;
+    background-color: rgb(27, 27, 27);
+    padding: 1vh 1vw 1vh 2vw;
+    border-radius: 0 20px 20px 0;
+
+}
+
+#about-me > .all-aboutme > .aboutme::after {
+    content: '';
+    width: 90%;
+    height: 3vh;
+    background-color: red;
+    box-shadow: 0 0 1vw red;
+    position: absolute;
+    bottom: 3vh;
+    right: 2vw;
+    border-radius: 30px;
+}
+
+#about-me > .all-aboutme > .aboutme > h2 {
+    font-size: 1.5vw;
+    margin-left: 2vw;
+}
+
+#about-me > .all-aboutme > .aboutme > p {
+    width: 100%;
+    font-size: 1.1vw;
+    text-align: justify;
+    text-indent: 3vw;
+    line-height: 1.5;
+    margin-top: 2vh;
+}
+
+.skill {
+
+}
+
+
 
 @media only screen and (max-width : 780px) {
     nav > .logo > h1 {
@@ -325,6 +423,81 @@ main > div {
     #home > .text> .link > a {
         padding: 2vw 3vh;
         margin-right:vw;
+    }
+
+    #about-me { 
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+    
+    #about-me > .image-aboutme {
+        width:50vw;
+        height: 30vh;
+        
+    }
+    
+    #about-me > .image-aboutme > img {
+        width: 15vh;
+        height: 15vh;
+        border-radius: 50%;
+        background-color: red;
+    }
+    
+    #about-me > .image-aboutme > .medsos {
+        width: 100%;
+        margin-top: 3vh;
+        display: flex;
+        justify-content: center;
+        gap: 3vw;
+    }
+    
+    #about-me > .image-aboutme > .medsos > a {
+        color: red;
+    }
+    
+    #about-me > .image-aboutme > .medsos > a > i {
+        font-size: 4vh;
+    }
+    
+    #about-me > .image-aboutme > a {
+        padding: 2vw 3vh;
+        box-shadow: 0 0 1vw red;
+        border-radius: 30px;
+        margin-top: 2vh;
+    }
+    
+    #about-me > .all-aboutme > .aboutme {
+        width:80vw;
+        height: 20vh;
+        position: relative;
+        top:4vh;
+        left: -1vw;
+        padding: 2vh 2vw 2vh 2vw;
+        margin-left: 2vw;
+    
+    }
+    
+    #about-me > .all-aboutme > .aboutme::after {
+        height: 2vh;
+        bottom: 2vh;
+        right: 5vw;
+    }
+    
+    #about-me > .all-aboutme > .aboutme > h2 {
+        font-size: 1.5vh;
+        margin-left: 2vw;
+    }
+    
+    #about-me > .all-aboutme > .aboutme > p {
+        font-size: 1.1vh;
+        margin-top: 2vh;
+    }
+    
+    .skill {
+    
     }
 
 }
