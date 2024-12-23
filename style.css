@@ -674,6 +674,17 @@ main > div {
         width: 100%;
        height: 25%;
     }
+#about-me > .all-aboutme > .wrapaboutme > .skill > .language > .skillbar > h2,
+#about-me > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar > h2 {
+    font-family: "Audiowide", sans-serif;
+    font-size: 1vh;
+}
+
+#about-me > .all-aboutme > .wrapaboutme > .skill > .language > .skillbar > .bar > span > h4,
+#about-me > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar > .bar > span > h4 {
+    font-size:1vh;
+}
+
     
 #about-me > .icon > .boxwrap > .box {
     width: 20vw;
