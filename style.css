@@ -699,6 +699,7 @@ main > div {
     }
     #about-me > .icon > .boxwrap {
         gap: 5vw;
+        padding-left: 3vw;
     }
     
     #about-me > .icon > .boxwrap > .box {
