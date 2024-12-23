@@ -14,6 +14,7 @@ body {
     background-color: rgb(12, 12, 12);
     color: white;
     font-family:"Poppins", sans-serif;
+    overflow: hidden;
 }
 body::-webkit-scrollbar{
     display: none;
@@ -271,15 +272,16 @@ main > div {
 }
 
 #about-me > .all-aboutme {
+    width: 100%;
     display: flex;
     gap: 2vw;
+    padding-top: 4vh;
 }
 
 #about-me > .all-aboutme > .aboutme {
-    width:40vw;
+    width:80%;
     height: 38vh;
     position: relative;
-    top:4vh;
     left: -1vw;
     box-shadow: 0 0 1vw red;
     background-color: rgb(27, 27, 27);
@@ -314,9 +316,152 @@ main > div {
     margin-top: 2vh;
 }
 
-.skill {
+#about-me > .all-aboutme > .aboutme > p > b > em {
+    font-family: "Audiowide", sans-serif;
+}
+
+#about-me > .all-aboutme > .skill {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 5vh;
+    
+}
+
+#about-me > .all-aboutme > .skill > .language,
+#about-me > .all-aboutme > .skill > .tool {
+    width: 80%;
+    height: 100%;
+    margin-left: 2vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1vh;
+    padding: 1vh 1vw 1vh 1vw;
+    border-radius: 20px;
+    box-shadow: 0 0 1vw red;
+}
+
+#about-me > .all-aboutme > .skill > .language {
+    box-shadow: 0 0 1vw red;
+}
+
+#about-me > .all-aboutme > .skill > .language > .skillbar,
+#about-me > .all-aboutme > .skill > .tool > .skillbar {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    gap: 1vh;
+}
+
+
+#about-me > .all-aboutme > .skill > .language > .skillbar > h2,
+#about-me > .all-aboutme > .skill > .tool > .skillbar > h2 {
+    font-family: "Audiowide",sans-serif;
+    font-size: 1vw;
+}
+
+#about-me > .all-aboutme > .skill > .language > .skillbar > .bar,
+#about-me > .all-aboutme > .skill > .tool > .skillbar > .bar {
+    width: 100%;
+    height: 80%;
+    border-radius: 30px ;
+} 
+
+#about-me > .all-aboutme > .skill > .language > .skillbar > .bar > span,
+#about-me > .all-aboutme > .skill > .tool > .skillbar > .bar > span {
+    display: flex;
+    align-items: center;
+    width: 0;
+    height: 100%;
+    background-color: red;
+    box-shadow: 0 0 1vw red;
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+    transition-delay:0.2s ;
 
 }
+
+#about-me > .all-aboutme > .skill > .language > .skillbar > .bar > span > h4,
+#about-me > .all-aboutme > .skill > .tool > .skillbar > .bar > span > h4 {
+    width: 97%;
+    text-align: right;
+}
+
+#about-me:target > .all-aboutme > .skill > .language > .skillbar:nth-child(1) > .bar > span {
+    width: 94%;
+}
+#about-me:target > .all-aboutme > .skill > .language > .skillbar:nth-child(2) > .bar > span {
+    width: 87%;
+}
+
+#about-me:target > .all-aboutme > .skill > .language > .skillbar:nth-child(3) > .bar > span {
+    width: 21%;
+}
+
+#about-me:target > .all-aboutme > .skill > .language > .skillbar:nth-child(4) > .bar > span {
+    width: 89%;
+}
+
+#about-me:target > .all-aboutme > .skill > .tool > .skillbar:nth-child(1) > .bar > span {
+    width: 0%;
+}
+
+#about-me:target > .all-aboutme > .skill > .tool > .skillbar:nth-child(2) > .bar > span {
+    width: 0%;
+}
+
+#about-me:target > .all-aboutme > .skill > .tool > .skillbar:nth-child(3) > .bar > span {
+    width: 0%;
+}
+
+#about-me:target > .all-aboutme > .skill > .tool > .skillbar:nth-child(4) > .bar > span {
+    width: 75%;
+}
+
+#about-me > .icon {
+    position: absolute;
+    bottom: 1vh;
+    left: 2vw;
+    width: 50%;
+    height: 45%;
+}
+
+#about-me > .icon > h2 {
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+#about-me > .icon > .boxwrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    margin-top: 3vh;
+}
+
+#about-me > .icon > .boxwrap > .box {
+    width: 10vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    background-color: rgb(57, 56, 56);
+    box-shadow: 0 0 1vw white;
+    border-radius: 10px;
+    padding-left: 1vw;
+}
+
+#about-me > .icon > .boxwrap > .box > img {
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+#about-me > .icon > .boxwrap > .box > h3 {
+    font-size: 1vw;
+}
+
+
+
 
 
 
@@ -498,8 +643,14 @@ main > div {
         margin-top: 2vh;
     }
     
-    .skill {
-    
+    #about-me > .all-aboutme {
+        overflow-x: scroll;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        background-color: aqua;
     }
-
+    #about-me > .all-aboutme > .aboutme {
+        width: 80vw;
+    }
 }
