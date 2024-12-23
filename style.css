@@ -822,5 +822,34 @@ main > div {
     #about-me > .icon > .boxwrap > .box > h3 {
         font-size: 1.2vh;
     }
+    
+    #my-service > .service {
+        width: 90vw;
+    }
+
+    #my-service > h1 {
+        font-size: 2vh;
+    }
+    
+    #my-service > p {
+        font-size: 1vh;
+    }
+
+    #my-service > .service > ul > li > h2{ 
+        font-size:2vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    #my-service > .service > ul > li > h2 > b{ 
+        font-size:1.5vw;
+        font-family: "Audiowide", sans-serif;
+        margin-left: 1.2vh;
+    }
+    
+    #my-service > .service > ul > li > p { 
+        font-size: 0.7vh;
+        text-align: justify;
+    }
 
 }
