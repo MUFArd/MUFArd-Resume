@@ -304,6 +304,9 @@ main > div {
     font-size: 1.5vw;
     margin-left: 2vw;
 }
+#about-me > .all-aboutme > .wrapaboutme > .aboutme > h3 {
+    display: none;
+}
 
 #about-me > .all-aboutme > .wrapaboutme > .aboutme > p {
     width: 100%;
@@ -374,7 +377,7 @@ main > div {
     box-shadow: 0 0 1vw red;
     border-radius: 30px;
     transition: all 0.5s ease-in-out;
-    transition-delay: 0.2s;
+    transition-delay: 0.4s;
 }
 
 #about-me > .all-aboutme > .wrapaboutme > .skill > .language > .skillbar > .bar > span > h4,
@@ -399,15 +402,15 @@ main > div {
 }
 
 #about-me:target > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar:nth-child(1) > .bar > span {
-    width: 0%;
+    width: 45%;
 }
 
 #about-me:target > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar:nth-child(2) > .bar > span {
-    width: 0%;
+    width: 35%;
 }
 
 #about-me:target > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar:nth-child(3) > .bar > span {
-    width: 0%;
+    width: 50%;
 }
 
 #about-me:target > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar:nth-child(4) > .bar > span {
@@ -440,8 +443,8 @@ main > div {
     display: flex;
     align-items: center;
     gap: 0.5vw;
-    background-color: rgb(57, 56, 56);
-    box-shadow: 0 0 1vw white;
+    background-color: rgb(61, 61, 61);
+    box-shadow: 0 0 1vw 0.3vw white;
     border-radius: 10px;
     padding-left: 1vw;
 }
@@ -453,6 +456,7 @@ main > div {
 
 #about-me > .icon > .boxwrap > .box > h3 {
     font-size: 1vw;
+    
 }
 
 
@@ -612,11 +616,10 @@ main > div {
     
     #about-me > .all-aboutme > .wrapaboutme > .aboutme {
         width:80vw;
-        height: 20vh;
+        height: 18vh;
         position: relative;
-        top:4vh;
         left: -1vw;
-        padding: 2vh 2vw 2vh 2vw;
+        padding: 1vh 2vw 2vh 2vw;
         margin-left: 2vw;
         border-radius: 20px;
     
@@ -624,13 +627,21 @@ main > div {
     
     #about-me > .all-aboutme > .wrapaboutme > .aboutme::after {
         height: 2vh;
-        bottom: 2vh;
+        bottom: 1vh;
         right: 5vw;
     }
     
     #about-me > .all-aboutme > .wrapaboutme > .aboutme > h2 {
         font-size: 1.5vh;
         margin-left: 2vw;
+    }
+    #about-me > .all-aboutme > .wrapaboutme > .aboutme > h3 {
+        display: block;
+        font-size: 1vh;
+        margin-left: 2vw;
+        position: absolute;
+        right: 1vw;
+        top: 1vh;
     }
     
     #about-me > .all-aboutme > .wrapaboutme > .aboutme > p {
@@ -655,11 +666,6 @@ main > div {
         align-items: center;
         margin-left: 7vw;
     }
-    #about-me > .all-aboutme> .wrapaboutme > .aboutme {
-        width: 80vw;
-        top: 0;
-        
-    }
 
     #about-me > .all-aboutme > .wrapaboutme >  .skill {
         width: 190vw;
@@ -670,7 +676,7 @@ main > div {
     #about-me > .all-aboutme > .wrapaboutme > .skill > .language,
     #about-me > .all-aboutme > .wrapaboutme > .skill > .tool {
         width: 80vw;
-        height: 18vh;
+        height: 20vh;
     }
     #about-me > .icon {
         width: 100%;
@@ -678,31 +684,33 @@ main > div {
     }
 
     #about-me > .icon > h2 {
-display:none;
-}
+        font-size: 1.5vh;
+    }
 
-#about-me > .all-aboutme > .wrapaboutme > .skill > .language > .skillbar > h2,
-#about-me > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar > h2 {
-    font-family: "Audiowide", sans-serif;
-    font-size: 1vh;
-}
+    #about-me > .all-aboutme > .wrapaboutme > .skill > .language > .skillbar > h2,
+    #about-me > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar > h2 {
+        font-family: "Audiowide", sans-serif;
+        font-size: 1.3vh;
+    }
 
-#about-me > .all-aboutme > .wrapaboutme > .skill > .language > .skillbar > .bar > span > h4,
-#about-me > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar > .bar > span > h4 {
-    font-size:1vh;
-}
-
+    #about-me > .all-aboutme > .wrapaboutme > .skill > .language > .skillbar > .bar > span > h4,
+    #about-me > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar > .bar > span > h4 {
+        font-size:1vh;
+    }
+    #about-me > .icon > .boxwrap {
+        gap: 5vw;
+    }
     
-#about-me > .icon > .boxwrap > .box {
-    width: 20vw;
-    height: 3vh;
-    display: flex;
-    align-items: center;
-    gap: 2vw;
+    #about-me > .icon > .boxwrap > .box {
+        width: 25vw;
+        height: 3vh;
+        display: flex;
+        align-items: center;
+        gap: 1vw;
 
-}
-#about-me > .icon > .boxwrap > .box > h3 {
-    font-size: 1vh;
-}
+    }
+    #about-me > .icon > .boxwrap > .box > h3 {
+        font-size: 1.2vh;
+    }
 
 }
