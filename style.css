@@ -670,4 +670,21 @@ main > div {
         width: 80vw;
         height: 18vh;
     }
+    #about-me > .icon {
+        width: 100%;
+       height: 25%;
+    }
+    
+#about-me > .icon > .boxwrap > .box {
+    width: 20vw;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+
+}
+#about-me > .icon > .boxwrap > .box > h3 {
+    font-size: 1vh;
+}
+
 }
