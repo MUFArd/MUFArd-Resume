@@ -587,15 +587,16 @@ main > div {
     font-size:2vw;
     display: flex;
     align-items: center;
+    gap: 1vw;
 }
 
 #my-service > .service > ul > li > h2 > b{ 
     font-size:1.5vw;
     font-family: "Audiowide", sans-serif;
-    margin-left: 1vw;
 }
 
 #my-service > .service > ul > li > p { 
+    width: 100%;
     font-size: 1vw;
     text-align: justify;
 }
@@ -644,6 +645,7 @@ main > div {
         opacity: 1;
         transform: translate(0);
     }
+
 
     #home {
         grid-template-areas: "image" 
@@ -914,22 +916,31 @@ main > div {
     #my-service > p {
         font-size: 1vh;
     }
-
-    #my-service > .service > ul > li > h2{ 
-        font-size:2vh;
+    #my-service > .service > ul > li {
         display: flex;
+        flex-direction: column;
+        justify-content: left;
         align-items: center;
+        background: transparent;
+    }
+    #my-service > .service > ul > li > h2{ 
+        width: 100%;
+        font-size:2vh;
     }
     
     #my-service > .service > ul > li > h2 > b{ 
-        font-size:1.5vw;
+        font-size:1.5vh;
         font-family: "Audiowide", sans-serif;
         margin-left: 1.2vh;
     }
     
     #my-service > .service > ul > li > p { 
-        font-size: 0.7vh;
+        font-size: 1vh;
+        text-indent: 3vw;
         text-align: justify;
+        padding: 1vh;
+        background:linear-gradient(45deg, red,rgb(255, 142, 142));
+
     }
 
 }
