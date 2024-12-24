@@ -498,6 +498,9 @@ main > div {
     width: 55%;
     height: 30%;
 }
+#about-me > .icon::-webkit-scrollbar {
+    display: none;
+}
 
 #about-me > .icon > h2 {
     font-size: 1.5vw;
@@ -826,7 +829,7 @@ main > div {
     }
 
     #about-me > .all-aboutme > .wrapaboutme >  .skill {
-        width: 190vw;
+        width: 185vw;
         display: flex;
         margin-left: 4vw;
         padding-bottom: 2vh;
