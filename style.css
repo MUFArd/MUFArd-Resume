@@ -366,8 +366,8 @@ main > div {
     gap: 5vh;
 }
 
-#about-me > .all-aboutme > .wrapaboutme > .skill > .language,
-#about-me > .all-aboutme > .wrapaboutme > .skill > .tool {
+#about-me > .all-aboutme > .wrapaboutme > .skill > .front,
+#about-me > .all-aboutme > .wrapaboutme > .skill > .front-skill {
     width: 80%;
     height: 100%;
     margin-left: 2vw;
@@ -379,32 +379,32 @@ main > div {
     box-shadow: 0 0 1vw red;
 }
 
-#about-me > .all-aboutme > .wrapaboutme > .skill > .language {
+#about-me > .all-aboutme > .wrapaboutme > .skill > .front {
     box-shadow: 0 0 1vw red;
 }
 
-#about-me > .all-aboutme > .wrapaboutme > .skill > .language > .skillbar,
-#about-me > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar {
+#about-me > .all-aboutme > .wrapaboutme > .skill > .front > .skillbar,
+#about-me > .all-aboutme > .wrapaboutme > .skill > .front-skill > .skillbar {
     display: grid;
     grid-template-rows: 0.5fr 1fr;
     gap: 1vh;
 }
 
-#about-me > .all-aboutme > .wrapaboutme > .skill > .language > .skillbar > h2,
-#about-me > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar > h2 {
+#about-me > .all-aboutme > .wrapaboutme > .skill > .front > .skillbar > h2,
+#about-me > .all-aboutme > .wrapaboutme > .skill > .front-skill > .skillbar > h2 {
     font-family: "Audiowide", sans-serif;
     font-size: 1vw;
 }
 
-#about-me > .all-aboutme > .wrapaboutme > .skill > .language > .skillbar > .bar,
-#about-me > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar > .bar {
+#about-me > .all-aboutme > .wrapaboutme > .skill > .front > .skillbar > .bar,
+#about-me > .all-aboutme > .wrapaboutme > .skill > .front-skill > .skillbar > .bar {
     width: 100%;
     height: 80%;
     border-radius: 30px;
 } 
 
-#about-me > .all-aboutme > .wrapaboutme > .skill > .language > .skillbar > .bar > span,
-#about-me > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar > .bar > span {
+#about-me > .all-aboutme > .wrapaboutme > .skill > .front > .skillbar > .bar > span,
+#about-me > .all-aboutme > .wrapaboutme > .skill > .front-skill > .skillbar > .bar > span {
     display: flex;
     align-items: center;
     width: 0;
@@ -416,49 +416,87 @@ main > div {
     transition-delay: 0.4s;
 }
 
-#about-me > .all-aboutme > .wrapaboutme > .skill > .language > .skillbar > .bar > span > h4,
-#about-me > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar > .bar > span > h4 {
+#about-me > .all-aboutme > .wrapaboutme > .skill > .front > .skillbar > .bar > span > h4,
+#about-me > .all-aboutme > .wrapaboutme > .skill > .front-skill > .skillbar > .bar > span > h4 {
     width: 97%;
     text-align: right;
 }
 
-#about-me:target > .all-aboutme > .wrapaboutme > .skill > .language > .skillbar:nth-child(1) > .bar > span {
+#about-me:target > .all-aboutme > .wrapaboutme > .skill > .front > .skillbar:nth-child(1) > .bar > span {
     width: 94%;
 }
-#about-me:target > .all-aboutme > .wrapaboutme > .skill > .language > .skillbar:nth-child(2) > .bar > span {
+#about-me:target > .all-aboutme > .wrapaboutme > .skill > .front > .skillbar:nth-child(2) > .bar > span {
     width: 87%;
 }
 
-#about-me:target > .all-aboutme > .wrapaboutme > .skill > .language > .skillbar:nth-child(3) > .bar > span {
+#about-me:target > .all-aboutme > .wrapaboutme > .skill > .front > .skillbar:nth-child(3) > .bar > span {
     width: 21%;
 }
 
-#about-me:target > .all-aboutme > .wrapaboutme > .skill > .language > .skillbar:nth-child(4) > .bar > span {
+#about-me:target > .all-aboutme > .wrapaboutme > .skill > .front > .skillbar:nth-child(4) > .bar > span {
     width: 89%;
 }
 
-#about-me:target > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar:nth-child(1) > .bar > span {
-    width: 45%;
+#about-me:target > .all-aboutme > .wrapaboutme > .skill > .front-skill > .skillbar:nth-child(1) > .bar > span {
+    width: 75%;
 }
 
-#about-me:target > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar:nth-child(2) > .bar > span {
-    width: 35%;
+#about-me:target > .all-aboutme > .wrapaboutme > .skill > .front-skill > .skillbar:nth-child(2) > .bar > span {
+    width: 60%;
 }
 
-#about-me:target > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar:nth-child(3) > .bar > span {
+#about-me:target > .all-aboutme > .wrapaboutme > .skill > .front-skill > .skillbar:nth-child(3) > .bar > span {
     width: 50%;
 }
 
-#about-me:target > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar:nth-child(4) > .bar > span {
-    width: 75%;
+#about-me:target > .all-aboutme > .wrapaboutme > .skill > .front-skill > .skillbar:nth-child(4) > .bar > span {
+    width: 60%;
 }
+
+
+#about-me > .softskill {
+    position: absolute;
+    top: 52%;
+    left: 0;
+    width: 55%;
+    height: auto;
+
+}
+#about-me > .softskill > h2 > em{
+    background: linear-gradient(45deg,red,white);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2vw;
+    margin-left: 3vw;
+
+}
+
+#about-me > .softskill > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    row-gap: 1vh;
+    margin-left: 2vw;
+
+}
+
+#about-me > .softskill > ul > li {
+    list-style: circle;
+    margin-left: 2vw;
+} 
+
+#about-me > .softskill > ul > li > p {
+    font-size: 1vw;
+}
+
+
 
 #about-me > .icon {
     position: absolute;
     bottom: 1vh;
-    left: 2vw;
-    width: 50%;
-    height: 45%;
+    left: 0;
+    width: 55%;
+    height: 30%;
 }
 
 #about-me > .icon > h2 {
@@ -471,6 +509,12 @@ main > div {
     flex-wrap: wrap;
     gap: 2vw;
     margin-top: 3vh;
+    padding: 1vh 2vw;
+    overflow-y: scroll;
+}
+
+#about-me > .icon > .boxwrap::-webkit-scrollbar {
+    display: none;
 }
 
 #about-me > .icon > .boxwrap > .box {
@@ -722,6 +766,11 @@ main > div {
         border-radius: 30px;
         margin-top: 2vh;
     }
+
+    #about-me > .all-aboutme {
+        position: absolute;
+        top: 10%;
+    }
     
     #about-me > .all-aboutme > .wrapaboutme > .aboutme {
         width:80vw;
@@ -782,33 +831,56 @@ main > div {
         margin-left: 4vw;
         padding-bottom: 2vh;
     }
-    #about-me > .all-aboutme > .wrapaboutme > .skill > .language,
-    #about-me > .all-aboutme > .wrapaboutme > .skill > .tool {
+    #about-me > .all-aboutme > .wrapaboutme > .skill > .front,
+    #about-me > .all-aboutme > .wrapaboutme > .skill > .front-skill {
         width: 80vw;
         height: 20vh;
     }
+
+    #about-me > .all-aboutme > .wrapaboutme > .skill > .front > .skillbar > h2,
+    #about-me > .all-aboutme > .wrapaboutme > .skill > .front-skill > .skillbar > h2 {
+        font-family: "Audiowide", sans-serif;
+        font-size: 1.3vh;
+    }
+
+    #about-me > .all-aboutme > .wrapaboutme > .skill > .front > .skillbar > .bar > span > h4,
+    #about-me > .all-aboutme > .wrapaboutme > .skill > .front-skill > .skillbar > .bar > span > h4 {
+        font-size:1vh;
+    }
+    #about-me > .softskill {
+        top: 45%;
+        width: 100%;
+    }
+    #about-me > .softskill > h2 {
+        text-align: center;
+    }
+    #about-me > .softskill > h2 > em{
+        font-size: 2vh;
+    }
+    #about-me > .softskill > ul {
+        justify-content: center;
+        margin-top: 1vh;
+    }
+    #about-me > .softskill > ul > li > p{
+        font-size: 1.1vh;    
+    }
+
     #about-me > .icon {
         width: 100%;
-       height: 25%;
+       height: 18%;
+       overflow-y: scroll;
     }
 
     #about-me > .icon > h2 {
         font-size: 1.5vh;
     }
 
-    #about-me > .all-aboutme > .wrapaboutme > .skill > .language > .skillbar > h2,
-    #about-me > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar > h2 {
-        font-family: "Audiowide", sans-serif;
-        font-size: 1.3vh;
-    }
-
-    #about-me > .all-aboutme > .wrapaboutme > .skill > .language > .skillbar > .bar > span > h4,
-    #about-me > .all-aboutme > .wrapaboutme > .skill > .tool > .skillbar > .bar > span > h4 {
-        font-size:1vh;
-    }
     #about-me > .icon > .boxwrap {
         gap: 5vw;
+        row-gap:0.5vh ;
         padding-left: 3vw;
+        flex-wrap: wrap;
+        height: 20vh;
     }
     
     #about-me > .icon > .boxwrap > .box {
