@@ -885,7 +885,7 @@ main > div {
     #about-me > .icon > .iconwrap >  .boxwrap {
         gap: 5vw;
         row-gap:0.5vh ;
-        padding-left: 3vw;
+        padding-left: 2vw;
         flex-wrap: nowrap;
         height: 20vh;
         width: 200vw;
@@ -896,7 +896,7 @@ main > div {
         height: 3vh;
         display: flex;
         align-items: center;
-        gap: 1vw;
+        gap: 0.5vw;
 
     }
     #about-me > .icon > .iconwrap >  .boxwrap > .box > h3 {
