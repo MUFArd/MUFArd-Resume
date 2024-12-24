@@ -587,6 +587,7 @@ main > div {
     font-size:2vw;
     display: flex;
     align-items: center;
+    width: 100%;
     gap: 1vw;
 }
 
@@ -916,12 +917,17 @@ main > div {
     #my-service > p {
         font-size: 1vh;
     }
+    #my-service > .service > ul {
+        gap: 2vh;
+    }
+
     #my-service > .service > ul > li {
         display: flex;
         flex-direction: column;
         justify-content: left;
         align-items: center;
         background: transparent;
+        padding: 0;
     }
     #my-service > .service > ul > li > h2{ 
         width: 100%;
