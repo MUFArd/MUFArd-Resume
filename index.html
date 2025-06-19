@@ -5,118 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>MUFArd</title>
+    <title>Portofolio</title>
 </head>
 <body>
-    <main>
+    <div class="loading-screen">
+        <div class="loading-text">
+            <p class="start-msg">>> Initializing Portfolio Environment..<span>.</span></p>
+            <p class="loading-msg" style="display: none;">>> Loading UI Modules <span class="progress-bar">[░░░░░░░░░░]</span> <span class="progress-num">0%</span></p>
+            <p class="access-msg" style="display: none;">>> Access Granted ✓</p>   
+        </div>
+    </div>
+    <div class="background"></div>
+    <header>
+        <div class="logo">
+            <h1>MUFArd</h1>
+        </div>
         <nav>
-            <div class="logo"><h1>Muhammad Farel Andriani</h1></div>
-            <input type="checkbox" name="" id="hamburger">
-            <label for="hamburger"><i class="fa-solid fa-bars" ></i></label>
-            <ul>
-                <li><a href="#content1">Home</a></li>
+            <ul class="links-nav">
+                <li class="active"><a href="#home">Home</a></li>
                 <li><a href="#aboutme">About Me</a></li>
-                <li><a href="#service">My Service</a></li>
-                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#myservice">My Service</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div id="aboutme">
-            <div class="biodata">
-                <h2>Profile</h2>
-                    <div class="medsos">
-                        <a href="https://github.com/MUFArd" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
-                        <a href="https://www.instagram.com/mufard_webdev/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
-                        <a href="https://wa.me/085776649749" target="_blank"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+    </header>
+    <main>
+        <section id="home" >
+            <div class="home-content">
+                <div class="image">
+                    <div class="img">
+                        <h2 class="name">
+                            <span class="fa">フ</span>
+                            <span class="a">ァ</span>
+                            <span class="re">レ</span>
+                            <span class="ru">ル</span>
+                            <span class="desu-space"> </span>
+                            <span class="de">で</span>
+                            <span class="su">す</span>、
+                        </h2>
+                        <h2 class="please">
+                            <span class="do">ど</span>
+                            <span class="u">う</span>
+                            <span class="zo">ぞ</span>
+                            <span class="yoroshiku-space"></span>
+                            <span class="yo">よ</span>
+                            <span class="ro">ろ</span>
+                            <span class="shi">し</span>
+                            <span class="ku">く</span>。
+                        </h2>
                     </div>
-                <a href="https://github.com/MUFArd/MyPortofolio/archive/refs/heads/main.zip" download="MyPortofolio.zip" >Download CV</a>
-            </div>
-            <input type="checkbox" name="" id="skillcard">
-            <div class="skill-FRONT">
-                <div class="skillbar">
-                    <h3>HTML5 - <em><b>Advenced< 4 /b></em></h3>
-                    <div class="percent">
-                        <div class="bar">
-                            <h3>92%</h3>
-                        </div>
-                    </div>
+                    <div class="img2"></div>
+                    <img src="img/Farel.png" alt="s" srcset="">
                 </div>
-                <div class="skillbar">
-                    <h3>CSS - <em><b>Intermediate</b></em></h3>
-                    <div class="percent">
-                        <div class="bar">
-                            <h3>85%</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="skillbar">
-                    <h3>Java Script - <em><b>Learning</b></em></h3>
-                    <div class="percent">
-                        <div class="bar">
-                            <h3>15%</h3>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="skill-BACK">
-                <div class="skillbar">
-                    <h3>PHP - <em><b>Beginner</b></em></h3>
-                    <div class="percent">
-                        <div class="bar">
-                            <h3>35%</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="skillbar">
-                    <h3>Python - <em><b>None</b></em></h3>
-                    <div class="percent">
-                        <div class="bar">
-                            <h3>0%</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="skillbar">
-                    <h3>Node.js - <em><b>None</b></em></h3>
-                    <div class="percent">
-                        <div class="bar">
-                            <h3>0%</h3>
-                        </div>
+                <div class="text">
+                    <h1 class="glitch">Muhammad Farel Andriani</h1>
+                    <h2>FULL-Stack Web Devoloper</h2>
+                    <div class="bttn-hire">
+                        <button id="btn-enter-system"><span>[</span><h2>ENTER SYSTEM</h2><span>]</span></button>
+                        <button id="btn-recruit"><span>[</span><h2>RECRUIT</h2><span>]</span></button>
                     </div>
                 </div>
             </div>
-            
-        </div>
-        <div id="content1">
-            <h1>I'm Muhammad Farel Andriani</h1>
-            <input type="checkbox" id="changetext">
-            <label for="changetext"><h2>WebDevoloper</h2></label>
-            <h2>& UI/UX Analyst</h2>
-
-            <div class="wrapimage">
-                <div class="webdevoloper">
-                    <input type="checkbox" name="checkbox" id="checkbox">
-                    <label for="checkbox"><i class="fa-solid fa-chevron-left fa-2x"></i></label>
-                    <div class="text">
-                        <h2>WebDevoloper</h2>
-                        <p>Sebagai <b><em>WebDevoloper</em></b> saya telah menguasai berbagai teknologi seperti HTML, CSS, PHP, dan MySQL, serta mampu membangun sistem yang responsif dan terstruktur. Dengan pengalaman dalam mengembangkan proyek skala kecil hingga besar, saya berkomitmen untuk menciptakan solusi web yang inovatif, efektif, dan sesuai kebutuhan pengguna.</p>
-                        <a href="">Hire as a <em><b>WebDevoloper</b></em> </a>
-                    </div>
-                </div>
-                <img src="./img/gwbaru.png" alt="" srcset="">
-                <div class="UiUx"> 
-                    <input type="checkbox" name="checkbox" id="checkbox2">
-                    <label for="checkbox2"><i class="fa-solid fa-chevron-right fa-2x"></i></label>
-                    <div class="text">
-                        <h2>UI/UX Analyst</h2>
-                        <p>Sebagai seorang  <b><em>UI/UX Analyst </b></em>, saya menganalisis desain dengan detail dan mengubahnya menjadi kode yang fungsional dan responsif. Keahlian saya memastikan bahwa setiap desain tidak hanya terlihat estetis, tetapi juga bekerja secara optimal dalam pengembangan web.</p>
-                        <a href="">Hire as a <em><b>WebDevoloper</b></em> </a>
-                    </div>
+        </section>
+        <section id="aboutme">
+            <div class="profil-card">
+                <div class="img"><img src="/img/Farel.png" alt="" srcset=""></div>
+                <h1>Muhammad Farel Andriani</h1>
+                <h2>FULL-Stack Web Devoloper</h2>
+                <button>Download CV</button>
+                <div class="link-medsoc">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-threads"></i>
                 </div>
             </div>
-        </div>
-
-
+        </section>
+       
     </main>
 </body>
+<script src="script.js"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Michroma&family=Noto+Sans+JP:wght@100..900&family=Orbitron:wght@400..900&display=swap');
+</style>
 </html>
