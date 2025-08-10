@@ -4,88 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Portofolio</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'pixelify': ['"Pixelify Sans"', 'sans-serif'],
+                        'press-start': ['"Press Start 2P"', 'system-ui'],
+                        'vt323': ['"VT323"', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <div class="loading-screen">
-        <div class="loading-text">
-            <p class="start-msg">>> Initializing Portfolio Environment..<span>.</span></p>
-            <p class="loading-msg" style="display: none;">>> Loading UI Modules <span class="progress-bar">[░░░░░░░░░░]</span> <span class="progress-num">0%</span></p>
-            <p class="access-msg" style="display: none;">>> Access Granted ✓</p>   
-        </div>
-    </div>
-    <div class="background"></div>
-    <header>
-        <div class="logo">
-            <h1>MUFArd</h1>
-        </div>
-        <nav>
-            <ul class="links-nav">
-                <li class="active"><a href="#home">Home</a></li>
-                <li><a href="#aboutme">About Me</a></li>
-                <li><a href="#myservice">My Service</a></li>
-                <li><a href="#portofolio">Portofolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class=" h-[200vh] bg-gray-900 text-white text-lg">
     <main>
-        <section id="home" >
-            <div class="home-content">
-                <div class="image">
-                    <div class="img">
-                        <h2 class="name">
-                            <span class="fa">フ</span>
-                            <span class="a">ァ</span>
-                            <span class="re">レ</span>
-                            <span class="ru">ル</span>
-                            <span class="desu-space"> </span>
-                            <span class="de">で</span>
-                            <span class="su">す</span>、
-                        </h2>
-                        <h2 class="please">
-                            <span class="do">ど</span>
-                            <span class="u">う</span>
-                            <span class="zo">ぞ</span>
-                            <span class="yoroshiku-space"></span>
-                            <span class="yo">よ</span>
-                            <span class="ro">ろ</span>
-                            <span class="shi">し</span>
-                            <span class="ku">く</span>。
-                        </h2>
-                    </div>
-                    <div class="img2"></div>
-                    <img src="img/Farel.png" alt="s" srcset="">
-                </div>
-                <div class="text">
-                    <h1 class="glitch">Muhammad Farel Andriani</h1>
-                    <h2>FULL-Stack Web Devoloper</h2>
-                    <div class="bttn-hire">
-                        <button id="btn-enter-system"><span>[</span><h2>ENTER SYSTEM</h2><span>]</span></button>
-                        <button id="btn-recruit"><span>[</span><h2>RECRUIT</h2><span>]</span></button>
-                    </div>
-                </div>
+        <header class="w-full h-14 flex items-center justify-between p-4 position fixed backdrop-blur-sm bg-black-900/30 z-1000">
+            <div class="flex items-center justify-center">
+                <h1 class="font-vt323 text-3xl" >MUHAMMAD FAREL ANDRIANI</h1>
+            </div>
+            <nav class="lg:flex items-center mr-6 text-[2rem] font-vt323 flex space-x-6  ">
+                <a href="#home" class="w-full hover:text-blue-400">Home</a>
+                <a href="#about" class="w-full  hover:text-blue-400">About</a>
+                <a href="#projects" class="w-full hover:text-blue-400">Projects</a>
+                <a href="#playground" class="w-full hover:text-blue-400">Playgorund</a>
+                <a href="#contact" class="w-full hover:text-blue-400">Contact</a>
+            </nav>
+        </header>
+        <section class="w-full h-screen bg-[url('https://getwallpapers.com/wallpaper/full/6/0/c/1216601-best-wallpaper-pixel-art-1920x1080-images.jpg')] bg-cover bg-center h-screen">
+            <div id="bg" class="w-30 h-screen grid place-items-center relative ">
+                <h1 id="txt" class="font-press-start text-5xl leading-normal fixed w-1/2 left-10 flex flex-wrap">Welcome To My Web Portofolio</h1>
             </div>
         </section>
-        <section id="aboutme">
-            <div class="profil-card">
-                <div class="img"><img src="/img/Farel.png" alt="" srcset=""></div>
-                <h1>Muhammad Farel Andriani</h1>
-                <h2>FULL-Stack Web Devoloper</h2>
-                <button>Download CV</button>
-                <div class="link-medsoc">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-threads"></i>
-                </div>
-            </div>
-        </section>
-       
     </main>
-</body>
 <script src="script.js"></script>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Michroma&family=Noto+Sans+JP:wght@100..900&family=Orbitron:wght@400..900&display=swap');
-</style>
 </html>
